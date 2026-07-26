@@ -1,8 +1,27 @@
 aid: earnest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/earnest.png
 name: Earnest
-description: Earnest is a company surfaced as a portfolio company of a16z, battery-ventures, slow-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Earnest is a technology-driven consumer finance lender headquartered in San Francisco,
+  offering student loan refinancing, private student loans, Parent PLUS loan refinancing,
+  and personal loans through Earnest Operations LLC and its bank partner FinWise Bank.
+  Founded in 2013 and backed by investors including Andreessen Horowitz (a16z), Battery
+  Ventures, and Slow Ventures, Earnest uses data-driven underwriting and merit-based pricing
+  to serve borrowers, reporting more than $24 billion in student loans refinanced and over
+  420,000 clients. Earnest is a consumer-facing lending brand and does not currently publish
+  a public developer API, developer portal, or API reference; this profile captures its
+  public web, security, and legal surface for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/earnest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fintech
+- Lending
+- Student Loans
+- Personal Loans
+- Consumer Finance
+- Loan Refinancing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +50,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://earnest.com
+  url: https://www.earnest.com
+- type: Blog
+  url: https://www.earnest.com/blog
+- type: Support
+  url: https://help.earnest.com/hc/en-us
+- type: Login
+  url: https://www.earnest.com/login
+- type: TermsOfService
+  url: https://www.earnest.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.earnest.com/privacy
+- type: DomainSecurity
+  url: security/earnest-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
